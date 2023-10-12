@@ -1,1 +1,438 @@
-paste
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+
+
+<head>
+    <title>Book Bus Tickets</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+
+
+
+
+
+
+<body>
+
+
+
+
+
+
+    <table id="table1">
+        <tr style="position: static;">
+            <td style="width: 75%;">
+                <p id="main-para">Book Bus Tickets</p>
+            </td>
+            <td style="width: 10%;text-align: center;">
+                <button id="login-btn">login</button>
+            </td>
+            <td style="width: 10%;">
+                <button id="signin-btn">sign-in</button>
+            </td>
+            <td style="width: 5%;">
+                <p id="header-profile">Profile</p>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+    <table id="table2">
+        <tr>
+            <td>
+                <p id="heading1">India's No. 1 Online Bus Ticket Booking Site</p>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+    <center>
+        <table id="table3">
+            <tr style="height: 30%;">
+                <td>
+                    <center>
+                        <div id="search-container">
+                            <select id="from" required>
+                                <option>From</option>
+                                <option>Banglore-Majestic</option>
+                                <option>Hubli-main bus stand</option>
+                                <option>Manglore-adarsh store</option>
+                                <option>Belgavi-shastri circle</option>
+                            </select>
+                            <select id="to" required>
+                                <option>To</option>
+                                <option>Banglore-Majestic</option>
+                                <option>Hubli-main bus stand</option>
+                                <option>Manglore-adarsh store</option>
+                                <option>Belgavi-shastri circle</option>
+                            </select>
+                            <input type="date" id="date" name="date" />
+                            <button id="search-bus" name="search-bus">Search Buses</button>
+                        </div>
+                    </center>
+                </td>
+            </tr>
+
+            <tr style="height: 55%;">
+                <td>
+                    <center>
+                        <table id="message-container">
+                            <tr>
+                                <td colspan="2">
+                                    <p id="message">Select the Boarding and Destination Points</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p id="trainNumberLabel"></p>
+                                </td>
+                                <td>
+                                    <p id="trainNumber"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p id="totalSeatsLabel"></p>
+                                </td>
+                                <td>
+                                    <p id="totalSeats"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p id="availSeatsLabel"></p>
+                                </td>
+                                <td>
+                                    <p id="availSeats"></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+                </td>
+            </tr>
+
+            <tr style="height: 15%;">
+                <td>
+                    <center>
+                        <button id="book-ticket">Check Seat</button>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+
+
+
+    <table id="table4">
+        <tr style="height: 20%;">
+            <td>
+                <p id="heading3">350+ Private Bus Operators</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="view-all-bus">view all</button>
+            </td>
+        </tr>
+        <tr style="height: 30%;">
+            <td>
+                <center>
+                    <table id="bus-table">
+                        <tr>
+                            <td>
+                                <p id="bus-company">Travels</p>
+                            </td>
+                            <td>
+                                <p id="bus-company">Evacay Bus</p>
+                            </td>
+                            <td>
+                                <p id="bus-company">Kallada Travels</p>
+                            </td>
+                            <td>
+                                <p id="bus-company">KPN Travels</p>
+                            </td>
+                            <td>
+                                <p id="bus-company">Orange Travels</p>
+                            </td>
+                            <td>
+                                <p id="bus-company">Parveen Travels</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="bus-company">Rajdhani Express</p>
+                            </td>
+                            <td>
+                                <p id="bus-company">VRL Travels</p>
+                            </td>
+                            <td>
+                                <p id="bus-company">Chartered Speed Bus</p>
+                            </td>
+                            <td>
+                                <p id="bus-company">Bengal Tiger</p>
+                            </td>
+                            <td>
+                                <p id="bus-company">SRM Travels</p>
+                            </td>
+                            <td>
+                                <p id="bus-company">Infant Jesus</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="bus-company">Patel Travels</p>
+                            </td>
+                            <td>
+                                <p id="bus-company">JBT Travels</p>
+                            </td>
+                            <td>
+                                <p id="bus-company">Shatabdi Travels</p>
+                            </td>
+                            <td>
+                                <p id="bus-company">Eagle Travels</p>
+                            </td>
+                            <td>
+                                <p id="bus-company">Kanker Roadways</p>
+                            </td>
+                            <td>
+                                <p id="bus-company">Komitla</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="bus-company">Sri Krishna Travels</p>
+                            </td>
+                            <td>
+                                <p id="bus-company">Humsafar Travels</p>
+                            </td>
+                            <td>
+                                <p id="bus-company">Mahasagar Travels</p>
+                            </td>
+                            <td>
+                                <p id="bus-company">Raj Express</p>
+                            </td>
+                            <td>
+                                <p id="bus-company">Sharma Travels</p>
+                            </td>
+                            <td>
+                                <p id="bus-company">Shrinath Travels</p>
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+            </td>
+        </tr>
+        <tr style="height:50% ;">
+            <td>
+
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+
+    <div id="div-footer">
+        <table id="footer">
+            <tr style="height: 10%;">
+                <th>
+                    <p id="footer-p1">Top RTCs</p>
+                </th>
+                <th>
+                    <p id="footer-p1">Other</p>
+                </th>
+                <th>
+                    <p id="footer-p1">Top bus routes</p>
+                </th>
+                <th>
+                    <p id="footer-p1">Top cities</p>
+                </th>
+                <th>
+                    <p id="footer-p1">redRail</p>
+                </th>
+            </tr>
+            <tr style="height: 10%;">
+                <td>
+                    <p id="footer-p1">APSRTC</p>
+                </td>
+                <td>
+                    <p id="footer-p1">TSRTC</p>
+                </td>
+                <td>
+                    <p id="footer-p1">Hyderabad to Bangalore Bus</p>
+                </td>
+                <td>
+                    <p id="footer-p1">Hyderabad Bus Tickets</p>
+                </td>
+                <td>
+                    <p id="footer-p1">Book Train Tickets</p>
+                </td>
+            </tr>
+            <tr style="height: 10%;">
+                <td>
+                    <p id="footer-p1">GSRTC</p>
+                </td>
+                <td>
+                    <p id="footer-p1">SBSTC</p>
+                </td>
+                <td>
+                    <p id="footer-p1">Bangalore to Chennai Bus</p>
+                </td>
+                <td>
+                    <p id="footer-p1">Bangalore Bus Tickets</p>
+                </td>
+                <td>
+                    <p id="footer-p1">PNR Status</p>
+                </td>
+            </tr>
+            <tr style="height: 10%;">
+                <td>
+                    <p id="footer-p1">MSRTC</p>
+                </td>
+                <td>
+                    <p id="footer-p1">RSRTC</p>
+                </td>
+                <td>
+                    <p id="footer-p1">Pune to Bangalore Bus</p>
+                </td>
+                <td>
+                    <p id="footer-p1">Chennai Bus Tickets</p>
+                </td>
+                <td>
+                    <p id="footer-p1">Live Train Status</p>
+                </td>
+            </tr>
+            <tr style="height: 10%;">
+                <td>
+                    <p id="footer-p1">TNSTC</p>
+                </td>
+                <td>
+                    <p id="footer-p1">Kerala RTC</p>
+                </td>
+                <td>
+                    <p id="footer-p1">Mumbai to Bangalore Bus</p>
+                </td>
+                <td>
+                    <p id="footer-p1">Pune Bus Tickets</p>
+                </td>
+                <td>
+                    <p id="footer-p1">Train Seat Availability</p>
+                </td>
+            </tr>
+            <tr style="height: 50%;">
+            </tr>
+        </table>
+
+        <hr>
+
+        <table id="footer2">
+            <tr style="height: 20%;">
+                <td colspan="2" rowspan="5" style="width: 30%;">
+                    <p style="font-size: 16px;text-align: left;" id="footer-p1">BookBusTickets is the world's largest
+                        online bus ticket booking service trusted by over 25 million happy customers globally. redBus
+                        offers bus ticket booking through its website, iOS and Android mobile apps for all major routes.
+                    </p>
+                </td>
+                <th>
+                    <p id="footer-p1">About BookBusTickets</p>
+                </th>
+                <th>
+                    <p id="footer-p1">Info</p>
+                </th>
+                <th>
+                    <p id="footer-p1">Global Sites</p>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <p id="footer-p1">About us</p>
+                </td>
+                <td>
+                    <p id="footer-p1">T&C</p>
+                </td>
+                <td>
+                    <p id="footer-p1">India</p>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <p id="footer-p1">Investor Relations</p>
+                </td>
+                <td>
+                    <p id="footer-p1">Privacy policy</p>
+                </td>
+                <td>
+                    <p id="footer-p1">Singapore</p>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <p id="footer-p1">Contact us</p>
+                </td>
+                <td>
+                    <p id="footer-p1">FAQ</p>
+                </td>
+                <td>
+                    <p id="footer-p1">Malaysia</p>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <p id="footer-p1">Mobile version</p>
+                </td>
+                <td>
+                    <p id="footer-p1">Blog</p>
+                </td>
+                <td>
+                    <p id="footer-p1">Indonesia</p>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+</body>
+
+
+
+
+
+
+<script src="./index.js"></script>
+
+
+
+</html>
