@@ -19,6 +19,7 @@ body {
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 #main-para-logo {
     color: white;
     margin-left: 10%;
@@ -90,7 +91,8 @@ body {
     background-color: #41729F;
     border-radius: 50px;
 }
-#table3 td{
+
+#table3 td {
     border: 0px solid white;
 }
 
@@ -275,18 +277,18 @@ div.cards {
     background-color: white;
     box-shadow: 1px 1px 20px rgb(131, 131, 131);
     overflow: auto;
-    width : 70%;
+    width: 70%;
     margin-bottom: 50px;
     height: 250px;
     border-radius: 30px;
     white-space: nowrap;
-  }
+}
 
-  .cards::-webkit-scrollbar {
+.cards::-webkit-scrollbar {
     display: none;
-  }
-  
-  div.cards div {
+}
+
+div.cards div {
     display: inline-block;
     color: black;
     margin: 40px 20px 0 20px;
@@ -294,7 +296,7 @@ div.cards {
     width: 350px;
     border: none;
     border-radius: 20px;
-  }
+}
 
 
 
@@ -329,7 +331,7 @@ div.cards {
 
 
 
-#footer2{
+#footer2 {
     background-color: rgb(53, 52, 52);
     width: 100%;
     border-top: 1px solid rgb(67, 67, 67);
@@ -339,10 +341,12 @@ div.cards {
     padding-top: 3%;
     padding-bottom: 5%;
 }
-#footer2 td{
+
+#footer2 td {
     text-align: center;
     border: 0px solid white;
 }
+
 #footer2 #footer-p1 {
     color: white;
     font-size: 12px;
@@ -351,7 +355,7 @@ div.cards {
 }
 
 
-#last-footer{
+#last-footer {
     background-color: rgb(53, 52, 52);
     height: 60px;
     padding-top: 1%;
@@ -359,7 +363,8 @@ div.cards {
     border-top: 1px solid rgb(85, 85, 85);
     width: 100%;
 }
-#last-footer a{
+
+#last-footer a {
     text-decoration: none;
     color: white;
 }

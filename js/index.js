@@ -36,7 +36,7 @@ searchBus.addEventListener('click', function () {
         //checking whether the train in there or not 
         if (trainFrom == fromAddress && trainto == toAddress) // both address should be same 
         {
-            trainFound = 1 ;
+            trainFound = 1;
         }
         //displays in terminal
         if (fromAddress != toAddress && fromAddress != 'From' && toAddress != 'To') {
