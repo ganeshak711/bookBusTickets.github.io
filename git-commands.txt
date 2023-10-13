@@ -1,0 +1,10 @@
+git --version                       //version check
+git config --global user.email "****@gmail.com"                         //connecting the github email
+git config --global user.name "****"                         //setting user name
+git config --list                       //displays the details of the account
+get clone                       //importing the folder from remote
+git status                          //checking the status of the local directory
+git add filename                        // adding the file to push to remote
+git add .                       // ready to push net local directory to remote github
+git commit -m "message"                         //commiting the change with message
+git push origin main                        //exporting the change from local to remote 
