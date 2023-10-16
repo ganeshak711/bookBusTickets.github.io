@@ -57,7 +57,7 @@ searchBus.addEventListener('click', function () {
     }
     if (trainFound == 1) {
         if(availSeats != 0)
-            $('#book-ticket').toggle(300);
+            $('#book-ticket').show(300);
     }
     console.log("Total Trains : " + trains.length);
 });
